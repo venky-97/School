@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(rgba(202, 200, 200, 0.978),rgba(249, 231, 231, 0.3)) , url(back-to-school-7385701.png);
+            background-size:cover ;
+            
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            margin: 20px;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .cmb {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .cmb a {
+            color: blueviolet;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .buttons {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .buttons:hover {
+            color: white;
+            text-decoration: none;
+            transform: scale(0.5);
+            background-color: rgb(133, 4, 253);
+        }
+        @media (max-width: 400px) {
+            .cmb {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .cmb a {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="Logo.jpg" width="100" height="100" alt="Logo">
+        <h2>SIGN IN</h2>
+        <form>
+            <!-- <label for="username"></label><br> -->
+            <input id="username" type="text" placeholder="Username"><br>
+            <!-- <label for="password"></label><br> -->
+            <input id="password" type="password" placeholder="Password"><br>
+            <div class="cmb">
+                <p><a href="ForgotPassword.html">Forgot Password</a></p>
+                <p><a href="Signup.html">Signup</a></p>
+            </div><br>
+            <a style="text-decoration: none;" class="buttons" href="Demo.html" type="submit">LOGIN</a>
+        </form>
+    </div>
+</body>
+</html>
